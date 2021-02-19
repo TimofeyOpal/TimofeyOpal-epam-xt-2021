@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MYLOCAL\\source\\repos\\Task 1\\Task 1\\Task 1.csproj",
+      "projectUniqueName": "C:\\Epam-xt-2021\\Task 1\\Task 1\\Task 1\\Task 1.csproj",
       "projectName": "Task 1",
-      "projectPath": "C:\\Users\\MYLOCAL\\source\\repos\\Task 1\\Task 1\\Task 1.csproj",
+      "projectPath": "C:\\Epam-xt-2021\\Task 1\\Task 1\\Task 1\\Task 1.csproj",
       "packagesPath": "C:\\Users\\MYLOCAL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MYLOCAL\\source\\repos\\Task 1\\Task 1\\obj\\",
+      "outputPath": "C:\\Epam-xt-2021\\Task 1\\Task 1\\Task 1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MYLOCAL\\AppData\\Roaming\\NuGet\\NuGet.Config",

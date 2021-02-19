@@ -160,6 +160,129 @@ namespace Task_1
             }
         }
     }
+    class Task7
+    {
+        public void Sort(int[] arr)
+        {
+            int min;
+            int max;
+            Random rand = new Random();
+            for (int i = 0; i < arr.Length; i++)
+                arr[i] = rand.Next();
+            min = arr[0];
+            max = arr[0];
+            for (int n = 0; n < arr.Length; n++)
+            {
+                if (min > arr[n])
+                {
+                    min = arr[n];
+                }
+                if (max < arr[n])
+                {
+                    max = arr[n];
+                }
+            }
+            for (int i = 0; i < arr.Length; i++)
+                for (int j = i + 1; j < arr.Length; j++)
+                    if (arr[i] > arr[j])
+                    {
+                        int temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+            Console.WriteLine($"Minimum = {min}\nMaximum = {max}\n");
+            foreach (int a in arr)
+            {
+                Console.WriteLine(a);
+            }
+
+
+        }
+    }
+    class Task8
+    {
+        public static int[,,] GenerateThreedArr(int[,,] arr)
+        {
+            Random rand = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                for (int a = 0; a < 15; a++)
+                {
+                    for (int b = 0; b < 20; b++)
+                    {
+                        arr[i, a, b] = rand.Next(-100, 100);
+
+                    }
+                }
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                for (int a = 0; a < 15; a++)
+                {
+                    for (int b = 0; b < 20; b++)
+                    {
+                        if (arr[i, a, b] > 0)
+                        {
+                            arr[i, a, b] = 0;
+
+                        }
+                    }
+                }
+            }
+            return arr;
+            //где при выводе есть значения без минуса, посмотреть на строчку выше в конец и там он будет
+        }
+    }
+
+    class Task9
+    {
+        public void CountSumItem(int[] arr)
+        {
+            Random rand = new Random();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = rand.Next(-100, 100);
+            }
+            int res = 0;
+            foreach (int a in arr)
+            {
+                if (a > 0)
+                {
+                    res += a;
+                }
+            }
+            Console.WriteLine($"sum of positive elements: {res}");
+        }
+    }
+    class Task10
+    {
+        public int SumPositiveIndexElements(int[,] arr)
+        {
+            int result = 0;
+            Random rand = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 15; j++)
+                {
+                    arr[i, j] = rand.Next(1, 15);
+
+                }
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 15; j++)
+                {
+                    if ((i % 2 == 0) && (j % 2 == 0))
+                    {
+                        result += arr[i, j];
+                    };
+
+
+                }
+            }
+            return result;
+        }
+    }
 
 
 }
