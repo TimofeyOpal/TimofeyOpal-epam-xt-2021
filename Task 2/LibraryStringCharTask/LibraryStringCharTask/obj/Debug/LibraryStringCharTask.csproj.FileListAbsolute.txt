@@ -1,0 +1,5 @@
+C:\Users\MYLOCAL\source\repos\LibraryStringCharTask\LibraryStringCharTask\bin\Debug\LibraryStringCharTask.dll
+C:\Users\MYLOCAL\source\repos\LibraryStringCharTask\LibraryStringCharTask\bin\Debug\LibraryStringCharTask.pdb
+C:\Users\MYLOCAL\source\repos\LibraryStringCharTask\LibraryStringCharTask\obj\Debug\LibraryStringCharTask.csproj.CoreCompileInputs.cache
+C:\Users\MYLOCAL\source\repos\LibraryStringCharTask\LibraryStringCharTask\obj\Debug\LibraryStringCharTask.dll
+C:\Users\MYLOCAL\source\repos\LibraryStringCharTask\LibraryStringCharTask\obj\Debug\LibraryStringCharTask.pdb
