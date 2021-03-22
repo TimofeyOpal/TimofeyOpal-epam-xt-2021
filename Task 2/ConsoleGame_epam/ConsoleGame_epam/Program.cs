@@ -1,34 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
+﻿sing System.Threading;
 
 namespace ConsoleGame_epam
 {
     class Program
     {
+
+
+
         static void Main(string[] args)
         {
             Wall wall = new Wall(15, 15);
             wall.Drow();
-             List<Enemy> koll = new List<Enemy>();
-            //Enemy enemy1 = new Enemy();
-            for (int i = 0; i < 5; i++)
+            List<Enemy> koll = new List<Enemy>();
+            for (int i = 0; i < 4; i++)
             {
-            //    enemy1.Write(ref wall);
                 koll.Add(new Enemy());
             }
-            foreach(Enemy enemy in koll)
+            foreach (Enemy enemy in koll)
             {
                 enemy.Write(ref wall);
+
             }
-            Player player = new Player(ref wall);
-            
+            Player player = new Player();
 
+            Console.CursorVisible = false;
+            while (true)
+            {
+                foreach (Enemy enemy in koll)
+                {
+                    enemy.Walk(ref wall);
+                }
+                player.Walk(ref wall);
 
-
-
-
+            }
 
         }
-        
+
     }
 }

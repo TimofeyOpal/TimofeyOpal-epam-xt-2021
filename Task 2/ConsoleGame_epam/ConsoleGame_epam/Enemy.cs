@@ -33,38 +33,72 @@ namespace ConsoleGame_epam
             switch (r)
             {
                 case 1:
-                    x++;
+                    if (x == 15)
+                    {
+                        x -= 3;
+
+                    }
+                    else
+                    {
+                        x++;
+                    }
                     WriteEnemy(Sprite, x, y);
                     break;
                 case 2:
-                    x--;
+                    if (x == 1)
+                    {
+                        x += 3;
+
+                    }
+                    else
+                    {
+                        x--;
+
+
+                    }
                     WriteEnemy(Sprite, x, y);
                     break;
+
                 case 3:
-                    y--;
+                    if (y > 15)
+                    {
+                        y -= 3;
+
+                    }
+                    else
+                    {
+                        y++;
+                    }
+
                     WriteEnemy(Sprite, x, y);
                     break;
                 case 4:
-                    y++;
+                    if (y == 1)
+                    {
+                        y += 3;
+
+                    }
+                    else
+                    {
+                        y--;
+                    }
+
                     WriteEnemy(Sprite, Row, Column);
                     break;
             }
-            //if ((Column < 1) | (Row < 1)) break;
-            //else if ((Row > wall.Row + 1) | (Column > wall.Column)) break;
-            // WriteEnemy(Sprite, Row, Column);
-            Thread.Sleep(1000);
+
+            Thread.Sleep(50);
 
 
         }
-        public static void WriteEnemy(char toWrite, int x, int y)
+        public void WriteEnemy(char toWrite, int x, int y)
         {
             try
             {
-                if (x >= 0 && y >= 0)
-                {
-                    Console.SetCursorPosition(x, y);
-                    Console.Write(toWrite);
-                }
+
+                Console.SetCursorPosition(x, y);
+                Console.Write(toWrite);
+
             }
             catch (Exception)
             {
