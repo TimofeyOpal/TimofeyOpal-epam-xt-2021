@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MYLOCAL\\source\\repos\\ConsoleGame_epam\\ConsoleGame_epam\\ConsoleGame_epam.csproj": {}
+    "C:\\Epam-xt-2021\\Task 2\\ConsoleGame_epam\\ConsoleGame_epam\\ConsoleGame_epam.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MYLOCAL\\source\\repos\\ConsoleGame_epam\\ConsoleGame_epam\\ConsoleGame_epam.csproj": {
+    "C:\\Epam-xt-2021\\Task 2\\ConsoleGame_epam\\ConsoleGame_epam\\ConsoleGame_epam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MYLOCAL\\source\\repos\\ConsoleGame_epam\\ConsoleGame_epam\\ConsoleGame_epam.csproj",
+        "projectUniqueName": "C:\\Epam-xt-2021\\Task 2\\ConsoleGame_epam\\ConsoleGame_epam\\ConsoleGame_epam.csproj",
         "projectName": "ConsoleGame_epam",
-        "projectPath": "C:\\Users\\MYLOCAL\\source\\repos\\ConsoleGame_epam\\ConsoleGame_epam\\ConsoleGame_epam.csproj",
+        "projectPath": "C:\\Epam-xt-2021\\Task 2\\ConsoleGame_epam\\ConsoleGame_epam\\ConsoleGame_epam.csproj",
         "packagesPath": "C:\\Users\\MYLOCAL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MYLOCAL\\source\\repos\\ConsoleGame_epam\\ConsoleGame_epam\\obj\\",
+        "outputPath": "C:\\Epam-xt-2021\\Task 2\\ConsoleGame_epam\\ConsoleGame_epam\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MYLOCAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
