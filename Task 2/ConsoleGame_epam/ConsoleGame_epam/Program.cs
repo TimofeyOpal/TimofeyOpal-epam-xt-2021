@@ -1,4 +1,6 @@
-﻿sing System.Threading;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading;
 
 namespace ConsoleGame_epam
 {
@@ -12,6 +14,7 @@ namespace ConsoleGame_epam
             Wall wall = new Wall(15, 15);
             wall.Drow();
             List<Enemy> koll = new List<Enemy>();
+            Console.CursorVisible = false;
             for (int i = 0; i < 4; i++)
             {
                 koll.Add(new Enemy());
@@ -23,7 +26,7 @@ namespace ConsoleGame_epam
             }
             Player player = new Player();
 
-            Console.CursorVisible = false;
+
             while (true)
             {
                 foreach (Enemy enemy in koll)

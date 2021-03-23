@@ -5,15 +5,15 @@ namespace ConsoleGame_epam
 {
     class Enemy : Point
     {
-
+        int x;
+        int y;
         public Enemy()
         {
 
             Sprite = '$';
 
         }
-        int x;
-        int y;
+        
         public void Write(ref Wall wall)
         {
             Random r = new Random();
