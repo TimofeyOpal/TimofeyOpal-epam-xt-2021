@@ -11,7 +11,7 @@ namespace ConsoleGame_epam
 
         static void Main(string[] args)
         {
-            Wall wall = new Wall(15, 15);
+            Wall wall = new Wall(30, 30);
             wall.Drow();
             List<Enemy> koll = new List<Enemy>();
             List<Food> food = new List<Food>();

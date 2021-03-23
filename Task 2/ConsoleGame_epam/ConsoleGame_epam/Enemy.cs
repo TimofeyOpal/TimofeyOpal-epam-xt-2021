@@ -33,7 +33,7 @@ namespace ConsoleGame_epam
             switch (r)
             {
                 case 1:
-                    if (x == 15)
+                    if (x == wall.Column)
                     {
                         x -= 3;
 
@@ -60,7 +60,7 @@ namespace ConsoleGame_epam
                     break;
 
                 case 3:
-                    if (y > 15)
+                    if (y > wall.Row)
                     {
                         y -= 3;
 
