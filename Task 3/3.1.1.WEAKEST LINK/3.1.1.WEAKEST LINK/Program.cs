@@ -8,11 +8,6 @@ namespace _3._1._1.WEAKEST_LINK
     {
         static void Main()
         {
-            //int N = 10;
-            // int C = 2;
-            // IEnumerable<int> person = Enumerable.Range(1, N);
-            //List<int> list = person.ToList();
-            // SortPerson<int>(list, 5);
 
             FillArray();
 

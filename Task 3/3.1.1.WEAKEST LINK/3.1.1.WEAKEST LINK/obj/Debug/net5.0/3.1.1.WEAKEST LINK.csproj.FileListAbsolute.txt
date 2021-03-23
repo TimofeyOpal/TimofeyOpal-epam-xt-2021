@@ -1,0 +1,16 @@
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\bin\Debug\net5.0\3.1.1.WEAKEST LINK.exe
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\bin\Debug\net5.0\3.1.1.WEAKEST LINK.deps.json
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\bin\Debug\net5.0\3.1.1.WEAKEST LINK.runtimeconfig.json
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\bin\Debug\net5.0\3.1.1.WEAKEST LINK.runtimeconfig.dev.json
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\bin\Debug\net5.0\3.1.1.WEAKEST LINK.dll
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\bin\Debug\net5.0\ref\3.1.1.WEAKEST LINK.dll
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\bin\Debug\net5.0\3.1.1.WEAKEST LINK.pdb
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\obj\Debug\net5.0\3.1.1.WEAKEST LINK.csprojAssemblyReference.cache
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\obj\Debug\net5.0\3.1.1.WEAKEST LINK.GeneratedMSBuildEditorConfig.editorconfig
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\obj\Debug\net5.0\3.1.1.WEAKEST LINK.AssemblyInfoInputs.cache
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\obj\Debug\net5.0\3.1.1.WEAKEST LINK.AssemblyInfo.cs
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\obj\Debug\net5.0\3.1.1.WEAKEST LINK.csproj.CoreCompileInputs.cache
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\obj\Debug\net5.0\3.1.1.WEAKEST LINK.dll
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\obj\Debug\net5.0\ref\3.1.1.WEAKEST LINK.dll
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\obj\Debug\net5.0\3.1.1.WEAKEST LINK.pdb
+C:\Epam-xt-2021\Task 3\3.1.1.WEAKEST LINK\3.1.1.WEAKEST LINK\obj\Debug\net5.0\3.1.1.WEAKEST LINK.genruntimeconfig.cache
