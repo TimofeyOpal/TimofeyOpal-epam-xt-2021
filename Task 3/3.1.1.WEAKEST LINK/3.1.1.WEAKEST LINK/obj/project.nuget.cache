@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "T2vK80eDix+NsStlo3O/QXHtvkkVIKRngjLha5MV2G21RXlAA5Vt9HLYDJU5zy8O8sowyYvK9HsnwQJwswVQKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Epam-xt-2021\\Task 3\\3.1.1.WEAKEST LINK\\3.1.1.WEAKEST LINK\\3.1.1.WEAKEST LINK.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MYLOCAL\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\MYLOCAL\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\MYLOCAL\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\MYLOCAL\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
