@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace ConsoleGame_epam
 {
@@ -46,8 +42,12 @@ namespace ConsoleGame_epam
                         Row++;
                         break;
                 }
-                //  if ((Column < 1) | (Row < 1)) break;
-                // else if ((Row > wall.Row + 1) | (Column > wall.Column)) break;
+                if ((Column < 1) | (Row < 1) | (Row > wall.Row ) | (Column > wall.Column+1))
+                {
+                    Console.Clear();
+                    Console.Write("Вы проиграли");
+                    Environment.Exit(0);
+                }               
                 Write(Sprite, Row, Column);
             }
             else
