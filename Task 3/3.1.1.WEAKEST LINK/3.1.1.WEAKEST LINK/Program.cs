@@ -7,11 +7,8 @@ namespace _3._1._1.WEAKEST_LINK
     class Program
     {
         static void Main()
-        {
-
+        {          
             FillArray();
-
-
         }
         static void FillArray()
         {
@@ -25,8 +22,6 @@ namespace _3._1._1.WEAKEST_LINK
             while (!int.TryParse(Console.ReadLine(), out men));
             SortPerson<int>(list, men);
         }
-
-
         static void SortPerson<T>(List<T> arr, int c)
         {
             if (c > arr.Count)
@@ -43,8 +38,6 @@ namespace _3._1._1.WEAKEST_LINK
             Console.WriteLine($"Осталось {arr.Count} человек");
             SortPerson<T>(arr, c);
         }
-
-
 
     }
 }

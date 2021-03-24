@@ -1,0 +1,16 @@
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\bin\Debug\net5.0\3.1.2.TEXT ANALYSIS.exe
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\bin\Debug\net5.0\3.1.2.TEXT ANALYSIS.deps.json
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\bin\Debug\net5.0\3.1.2.TEXT ANALYSIS.runtimeconfig.json
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\bin\Debug\net5.0\3.1.2.TEXT ANALYSIS.runtimeconfig.dev.json
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\bin\Debug\net5.0\3.1.2.TEXT ANALYSIS.dll
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\bin\Debug\net5.0\ref\3.1.2.TEXT ANALYSIS.dll
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\bin\Debug\net5.0\3.1.2.TEXT ANALYSIS.pdb
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\obj\Debug\net5.0\3.1.2.TEXT ANALYSIS.csprojAssemblyReference.cache
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\obj\Debug\net5.0\3.1.2.TEXT ANALYSIS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\obj\Debug\net5.0\3.1.2.TEXT ANALYSIS.AssemblyInfoInputs.cache
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\obj\Debug\net5.0\3.1.2.TEXT ANALYSIS.AssemblyInfo.cs
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\obj\Debug\net5.0\3.1.2.TEXT ANALYSIS.csproj.CoreCompileInputs.cache
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\obj\Debug\net5.0\3.1.2.TEXT ANALYSIS.dll
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\obj\Debug\net5.0\ref\3.1.2.TEXT ANALYSIS.dll
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\obj\Debug\net5.0\3.1.2.TEXT ANALYSIS.pdb
+C:\Epam-xt-2021\Task 3\3.1.2.TEXT ANALYSIS\3.1.2.TEXT ANALYSIS\obj\Debug\net5.0\3.1.2.TEXT ANALYSIS.genruntimeconfig.cache
