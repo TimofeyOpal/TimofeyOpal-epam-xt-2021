@@ -7,7 +7,23 @@ namespace _3._1._1.WEAKEST_LINK
     class Program
     {
         static void Main()
-        {          
+        {
+            Console.WriteLine("Введите N");
+            int N;
+            int count = 0;
+            while (!int.TryParse(Console.ReadLine(), out N)) ;
+            var list = new LinkedList<int>(Enumerable.Range(1, N));
+            var currentItem = list.First;
+            while (list.Count != 1)
+            {
+                list.Remove(currentItem.Next ?? list.First);
+                currentItem = currentItem.Next ?? list.First;
+                Console.WriteLine($"Раунд {++count}. Вычеркнут человек. Людей осталось {list.Count}");
+            }
+
+
+
+
             FillArray();
         }
         static void FillArray()
@@ -40,4 +56,5 @@ namespace _3._1._1.WEAKEST_LINK
         }
 
     }
+    
 }
