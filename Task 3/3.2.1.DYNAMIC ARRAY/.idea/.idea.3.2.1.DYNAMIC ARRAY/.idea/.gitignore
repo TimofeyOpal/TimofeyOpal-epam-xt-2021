@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/.idea.3.2.1.DYNAMIC ARRAY.iml
+/projectSettingsUpdater.xml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\MYLOCAL\source\repos\3.2.1.DYNAMIC ARRAY\.idea\.idea.3.2.1.DYNAMIC ARRAY\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
