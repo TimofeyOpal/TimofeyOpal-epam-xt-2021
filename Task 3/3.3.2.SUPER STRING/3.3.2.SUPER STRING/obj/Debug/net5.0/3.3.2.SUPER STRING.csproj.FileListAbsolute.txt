@@ -14,3 +14,19 @@ C:\Users\MYLOCAL\source\repos\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\ne
 C:\Users\MYLOCAL\source\repos\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\ref\3.3.2.SUPER STRING.dll
 C:\Users\MYLOCAL\source\repos\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\3.3.2.SUPER STRING.pdb
 C:\Users\MYLOCAL\source\repos\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\3.3.2.SUPER STRING.genruntimeconfig.cache
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\bin\Debug\net5.0\3.3.2.SUPER STRING.exe
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\bin\Debug\net5.0\3.3.2.SUPER STRING.deps.json
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\bin\Debug\net5.0\3.3.2.SUPER STRING.runtimeconfig.json
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\bin\Debug\net5.0\3.3.2.SUPER STRING.runtimeconfig.dev.json
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\bin\Debug\net5.0\3.3.2.SUPER STRING.dll
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\bin\Debug\net5.0\ref\3.3.2.SUPER STRING.dll
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\bin\Debug\net5.0\3.3.2.SUPER STRING.pdb
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\3.3.2.SUPER STRING.csprojAssemblyReference.cache
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\3.3.2.SUPER STRING.GeneratedMSBuildEditorConfig.editorconfig
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\3.3.2.SUPER STRING.AssemblyInfoInputs.cache
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\3.3.2.SUPER STRING.AssemblyInfo.cs
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\3.3.2.SUPER STRING.csproj.CoreCompileInputs.cache
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\3.3.2.SUPER STRING.dll
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\ref\3.3.2.SUPER STRING.dll
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\3.3.2.SUPER STRING.pdb
+C:\Epam-xt-2021\Task 3\3.3.2.SUPER STRING\3.3.2.SUPER STRING\obj\Debug\net5.0\3.3.2.SUPER STRING.genruntimeconfig.cache

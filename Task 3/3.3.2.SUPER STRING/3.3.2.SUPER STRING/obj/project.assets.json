@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MYLOCAL\\source\\repos\\3.3.2.SUPER STRING\\3.3.2.SUPER STRING\\3.3.2.SUPER STRING.csproj",
+      "projectUniqueName": "C:\\Epam-xt-2021\\Task 3\\3.3.2.SUPER STRING\\3.3.2.SUPER STRING\\3.3.2.SUPER STRING.csproj",
       "projectName": "3.3.2.SUPER STRING",
-      "projectPath": "C:\\Users\\MYLOCAL\\source\\repos\\3.3.2.SUPER STRING\\3.3.2.SUPER STRING\\3.3.2.SUPER STRING.csproj",
+      "projectPath": "C:\\Epam-xt-2021\\Task 3\\3.3.2.SUPER STRING\\3.3.2.SUPER STRING\\3.3.2.SUPER STRING.csproj",
       "packagesPath": "C:\\Users\\MYLOCAL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MYLOCAL\\source\\repos\\3.3.2.SUPER STRING\\3.3.2.SUPER STRING\\obj\\",
+      "outputPath": "C:\\Epam-xt-2021\\Task 3\\3.3.2.SUPER STRING\\3.3.2.SUPER STRING\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MYLOCAL\\AppData\\Roaming\\NuGet\\NuGet.Config",

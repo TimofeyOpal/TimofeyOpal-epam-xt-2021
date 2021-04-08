@@ -6,7 +6,7 @@ namespace _3._3._2.SUPER_STRING
     {
         static void Main(string[] args)
         {
-            string word = "4546ff5456";
+            string word = "45465456";
             Console.WriteLine(word.Define());
 
         }
@@ -15,37 +15,36 @@ namespace _3._3._2.SUPER_STRING
     {
         public static string Define(this string word)
         {
+            int eng = 0, rus = 0, numbers = 0;
             int resItem = 0;
-            char[] arrText = word.ToCharArray();
-            var arrRus = new System.Collections.Generic.List<bool>();
-            var arrEng = new System.Collections.Generic.List<bool>();
-            var arrNumbers = new System.Collections.Generic.List<bool>();
+
+            char[] arrText = word.ToCharArray();         
             foreach (var item in arrText)
             {
                 resItem = (int)item;
                 if ((resItem >= 65) && (resItem <= 122))
-                    arrEng.Add(true);
+                    eng++;
 
                 else if ((resItem >= 1040) && (resItem <= 1103))
-                     arrRus.Add(true);
+                    rus++;
 
                 else if ((resItem >= 48) && (resItem <= 57))
-                     arrNumbers.Add(true);
+                    numbers++;
                 else
                 {
                     break;
                 }
             }
 
-            if (arrRus.Count == arrText.Length)
+            if (rus== arrText.Length)
             {
                 return "Русский";
             }
-            else if (arrEng.Count == arrText.Length)
+            else if (eng == arrText.Length)
             {
                 return "Английский";
             }
-            else if (arrNumbers.Count == arrText.Length)
+            else if (numbers == arrText.Length)
             {
                 return "Числа";
             }
