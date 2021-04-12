@@ -15,9 +15,7 @@ namespace _3._3._2.SUPER_STRING
     {
         public static string Define(this string word)
         {
-            int eng = 0, rus = 0, numbers = 0;
-            int resItem = 0;
-
+            int eng = 0, rus = 0, numbers = 0, resItem ;
             char[] arrText = word.ToCharArray();         
             foreach (var item in arrText)
             {
@@ -35,7 +33,6 @@ namespace _3._3._2.SUPER_STRING
                     break;
                 }
             }
-
             if (rus== arrText.Length)
             {
                 return "Русский";
