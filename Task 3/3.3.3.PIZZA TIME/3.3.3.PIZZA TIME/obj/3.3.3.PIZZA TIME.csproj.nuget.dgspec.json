@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MYLOCAL\\source\\repos\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME.csproj": {}
+    "C:\\Epam-xt-2021\\Task 3\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MYLOCAL\\source\\repos\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME.csproj": {
+    "C:\\Epam-xt-2021\\Task 3\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MYLOCAL\\source\\repos\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME.csproj",
+        "projectUniqueName": "C:\\Epam-xt-2021\\Task 3\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME.csproj",
         "projectName": "3.3.3.PIZZA TIME",
-        "projectPath": "C:\\Users\\MYLOCAL\\source\\repos\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME.csproj",
+        "projectPath": "C:\\Epam-xt-2021\\Task 3\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME.csproj",
         "packagesPath": "C:\\Users\\MYLOCAL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MYLOCAL\\source\\repos\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME\\obj\\",
+        "outputPath": "C:\\Epam-xt-2021\\Task 3\\3.3.3.PIZZA TIME\\3.3.3.PIZZA TIME\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MYLOCAL\\AppData\\Roaming\\NuGet\\NuGet.Config",

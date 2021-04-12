@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
 using System.Threading;
-using System.Threading.Tasks;
+
 
 namespace _3._3._3.PIZZA_TIME
 {
@@ -13,7 +11,6 @@ namespace _3._3._3.PIZZA_TIME
        // {
        //     await Task.Run(() => CookPizzar(count));
        // }
-
         public override void CookPizza(int count)
         {
             int countpizza = default;
@@ -23,11 +20,6 @@ namespace _3._3._3.PIZZA_TIME
                 Thread.Sleep(1000);
                 Console.WriteLine($"Пицца №'{countpizza}' Флорентина готова");
             }
-
-
         }
-
-
     }
-
 }
