@@ -8,18 +8,15 @@ namespace _3._3._3.PIZZA_TIME
 {
     class Pizzeria
     {
-        
         User user = new User();
-        int countPizza = 0;
-      
+        int countPizza = 0; 
         event VoidPizza PizzaEvent = delegate { };
         Pizza pizza;
         public Pizzeria()
         {
-
             Inter();
         }
-        
+      
         public Pizza GetPizza(string number, int countPizza)
         {
             PizzaEvent += Pizzeria_PizzaEvent1;
@@ -42,10 +39,8 @@ namespace _3._3._3.PIZZA_TIME
         {
             while (true)
             {
-
                 string piz;
                 Console.WriteLine("Введите имя");
-
                 user.Name = Console.ReadLine();
                 Console.WriteLine($"{user.Name} введите номер пиццы");
                 piz = Console.ReadLine();
@@ -63,8 +58,6 @@ namespace _3._3._3.PIZZA_TIME
             }
             PizzaEvent += Pizzeria_PizzaEventReady;
             PizzaEvent?.Invoke();
-
-
         }
         private void Pizzeria_PizzaEventReady()
         {
@@ -76,7 +69,5 @@ namespace _3._3._3.PIZZA_TIME
             Console.WriteLine($"{user.Name} ваша пицца готовится");
             PizzaEvent = null;
         }
-
-
     }
 }

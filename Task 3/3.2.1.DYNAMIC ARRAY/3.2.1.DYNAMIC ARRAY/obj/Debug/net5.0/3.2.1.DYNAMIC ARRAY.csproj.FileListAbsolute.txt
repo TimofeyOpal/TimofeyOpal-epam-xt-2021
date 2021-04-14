@@ -14,3 +14,19 @@ C:\Users\MYLOCAL\source\repos\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\
 C:\Users\MYLOCAL\source\repos\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\ref\3.2.1.DYNAMIC ARRAY.dll
 C:\Users\MYLOCAL\source\repos\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\3.2.1.DYNAMIC ARRAY.pdb
 C:\Users\MYLOCAL\source\repos\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\3.2.1.DYNAMIC ARRAY.genruntimeconfig.cache
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\bin\Debug\net5.0\3.2.1.DYNAMIC ARRAY.exe
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\bin\Debug\net5.0\3.2.1.DYNAMIC ARRAY.deps.json
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\bin\Debug\net5.0\3.2.1.DYNAMIC ARRAY.runtimeconfig.json
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\bin\Debug\net5.0\3.2.1.DYNAMIC ARRAY.runtimeconfig.dev.json
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\bin\Debug\net5.0\3.2.1.DYNAMIC ARRAY.dll
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\bin\Debug\net5.0\ref\3.2.1.DYNAMIC ARRAY.dll
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\bin\Debug\net5.0\3.2.1.DYNAMIC ARRAY.pdb
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\3.2.1.DYNAMIC ARRAY.csprojAssemblyReference.cache
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\3.2.1.DYNAMIC ARRAY.GeneratedMSBuildEditorConfig.editorconfig
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\3.2.1.DYNAMIC ARRAY.AssemblyInfoInputs.cache
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\3.2.1.DYNAMIC ARRAY.AssemblyInfo.cs
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\3.2.1.DYNAMIC ARRAY.csproj.CoreCompileInputs.cache
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\3.2.1.DYNAMIC ARRAY.dll
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\ref\3.2.1.DYNAMIC ARRAY.dll
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\3.2.1.DYNAMIC ARRAY.pdb
+C:\Epam-xt-2021\Task 3\3.2.1.DYNAMIC ARRAY\3.2.1.DYNAMIC ARRAY\obj\Debug\net5.0\3.2.1.DYNAMIC ARRAY.genruntimeconfig.cache

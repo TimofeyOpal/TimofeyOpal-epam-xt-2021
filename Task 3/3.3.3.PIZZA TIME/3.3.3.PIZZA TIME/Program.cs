@@ -7,9 +7,7 @@
 
         static void Main(string[] args)
         {
-
             Pizzeria pizzeria = new Pizzeria();
-
 
         }
     }
