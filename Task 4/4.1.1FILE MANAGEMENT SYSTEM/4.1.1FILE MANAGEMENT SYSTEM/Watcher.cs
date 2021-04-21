@@ -10,9 +10,13 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
     {
         readonly string homePath = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument";
         readonly string lastLocalVersion = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\LastVersia";
-        // static string derictory = @$"{homePath}\{DateTime.Now.ToString().Replace(":", ",")}";
         FileSystemWatcher watcher = new(@"C:\Users\MYLOCAL\Desktop\system local version\TextDocument");
+        string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
+        string time;
+        string[] fileEntries;
         DirectoryInfo di;
+
+
 
         public Watcher()
         {
@@ -43,7 +47,6 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
         {
 
             string derictory;
-            string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
             if (!Directory.Exists(lastLocalVersion))
             {
                 Directory.CreateDirectory(lastLocalVersion);
@@ -53,10 +56,10 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
             {
                 File.Copy(srcPath, srcPath.Replace(homePath, lastLocalVersion), true);
             }
-            string[] fileEntries = Directory.GetFiles(lastLocalVersion);
+             fileEntries = Directory.GetFiles(lastLocalVersion);
             for (int i = 0; i < fileEntries.Length; i++)
             {
-                derictory = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\{File.GetLastWriteTime(fileEntries[i]).ToString().Replace(":", ",")}";
+                derictory = @$"{homePath}\{File.GetLastWriteTime(fileEntries[i]).ToString().Replace(":", ",")}";
                 di = Directory.CreateDirectory(derictory);
                 File.Copy(fileEntries[i], derictory + "\\" + Path.GetFileName(fileEntries[i]), true);
 
@@ -80,9 +83,8 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
 
         void OnChanged(object sender, FileSystemEventArgs e)
         {
-            string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
 
-            string time = DateTime.Now.ToString().Replace(":", ",");
+             time = DateTime.Now.ToString().Replace(":", ",");
 
             string[] fileEntries = Directory.GetFiles(lastLocalVersion);
 
@@ -111,12 +113,7 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
 
         private void OnCreated(object sender, FileSystemEventArgs e)
         {
-            string time = DateTime.Now.ToString().Replace(":", ",");
-
-            string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
-
-
-            Console.WriteLine($"Время изменения {time}  ");
+            time = DateTime.Now.ToString().Replace(":", ","); 
 
             string value = $"Создан файл: {e.FullPath}";
 
@@ -138,16 +135,17 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
                 sw.WriteLine(File.GetLastWriteTime(fileEntries[a]).ToString().Replace(":", ","));
             }
 
+            Console.WriteLine($"Время изменения {time}");
 
         }
 
         private void OnDeleted(object sender, FileSystemEventArgs e)
         {
-            string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
+            
 
-            string time = DateTime.Now.ToString().Replace(":", ",");
+             time = DateTime.Now.ToString().Replace(":", ",");
 
-            string[] fileEntries = Directory.GetFiles(lastLocalVersion);
+             fileEntries = Directory.GetFiles(lastLocalVersion);
 
             File.Delete(lastLocalVersion + "\\" + Path.GetFileName(e.Name));
 
@@ -159,18 +157,17 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
                 }
             }
 
-            Console.WriteLine($"Время изменения {DateTime.Now}  ");
+            Console.WriteLine($"Время изменения {time}  ");
             Console.WriteLine($"Удалено: {e.FullPath}");
         }
 
 
         private void OnRenamed(object sender, RenamedEventArgs e)
         {
-            string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
 
-            string time = DateTime.Now.ToString().Replace(":", ",");
+            time = DateTime.Now.ToString().Replace(":", ",");
 
-            string[] fileEntries = Directory.GetFiles(lastLocalVersion);
+            fileEntries = Directory.GetFiles(lastLocalVersion);
 
             using (StreamWriter sw = File.CreateText(version + "\\" + time + ".txt"))
             {
