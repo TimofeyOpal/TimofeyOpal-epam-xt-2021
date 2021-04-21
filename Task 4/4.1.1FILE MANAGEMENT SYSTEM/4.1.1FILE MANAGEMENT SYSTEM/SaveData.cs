@@ -1,56 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _4._1._1FILE_MANAGEMENT_SYSTEM
 {
-    
-        public static class SaveData
+
+    public static class SaveData
+    {
+        public static void Save(string homePath, string lastLocalVersion, FileSystemEventArgs e)
         {
-            public static void Save(string homePath, string lastLocalVersion, FileSystemEventArgs e)
+            string derictory = @$"{homePath}\{DateTime.Now.ToString().Replace(":", ",")}";
+            string name;
+            string searchName;
+            if (e is RenamedEventArgs)
             {
-                string derictory = @$"{homePath}\{DateTime.Now.ToString().Replace(":", ",")}";
-                string name = Path.GetFileName(e.Name);
-                string searchName;
-
-                Console.WriteLine(Path.GetFileName(e.Name));
-                foreach (var srcPath in Directory.GetFiles(lastLocalVersion))
-                {
-                    searchName = Path.GetFileName(srcPath);
-
-                    if (name == searchName)
-                    {
-                        Directory.CreateDirectory(derictory);
-
-                        File.Move(srcPath, derictory + "\\" + name);
-                    }
-
-                }
+                var eventRename = e as RenamedEventArgs;
+                name = Path.GetFileName(eventRename.OldFullPath);
+            }
+            else
+            {
+                name = Path.GetFileName(e.Name);
             }
 
-            public static void SaveRenamedFile(string homePath, string lastLocalVersion, RenamedEventArgs e)
+            Console.WriteLine(Path.GetFileName(e.Name));
+            foreach (var srcPath in Directory.GetFiles(lastLocalVersion))
             {
-                string derictory = @$"{homePath}\{DateTime.Now.ToString().Replace(":", ",")}";
-                string name = Path.GetFileName(e.OldFullPath);
-                string searchName;
+                searchName = Path.GetFileName(srcPath);
 
-                Console.WriteLine(Path.GetFileName(e.Name));
-                foreach (var srcPath in Directory.GetFiles(lastLocalVersion))
+                if (name == searchName)
                 {
-                    searchName = Path.GetFileName(srcPath);
-
-                    if (name == searchName)
-                    {
-                        DirectoryInfo di = Directory.CreateDirectory(derictory);
-                        di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
-                        File.Move(srcPath, derictory + "\\" + name);
-                    }
-
+                    DirectoryInfo di = Directory.CreateDirectory(derictory);
+                    di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
+                    File.Move(srcPath, derictory + "\\" + name);
                 }
+
             }
-        
+        }
+
     }
 }

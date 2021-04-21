@@ -145,6 +145,7 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
 
              time = DateTime.Now.ToString().Replace(":", ",");
 
+
              fileEntries = Directory.GetFiles(lastLocalVersion);
 
             File.Delete(lastLocalVersion + "\\" + Path.GetFileName(e.Name));
@@ -177,7 +178,7 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
                 }
             }
 
-            SaveData.SaveRenamedFile(homePath, lastLocalVersion, e);
+            SaveData.Save(homePath, lastLocalVersion, e);
             Console.WriteLine($"Время изменения {time}  ");
             Console.WriteLine($"Переименовано:");
             Console.WriteLine($"    Старое название: {e.OldFullPath}");
