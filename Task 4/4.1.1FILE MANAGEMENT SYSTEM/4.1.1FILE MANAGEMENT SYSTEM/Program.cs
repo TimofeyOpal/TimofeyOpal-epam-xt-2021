@@ -7,12 +7,6 @@ namespace MyNamespace
     {
         static void Main()
         {
-            Console.WriteLine(File.GetLastWriteTime(@"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\Новый текстовый документ.txt"));
-            Console.WriteLine(File.GetCreationTime(@"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\Новый текстовый документ.txt"));
-
-
-
-            Watcher watcher;
             Console.WriteLine("Выберете режим");
             Console.WriteLine("1 = наблюдения 2 = отката изменений назад");
 
@@ -20,18 +14,12 @@ namespace MyNamespace
             switch (number)
             {
                 case "1":
-                    watcher = new Watcher();
-
+                     new Watcher();
                     break;
                 default:
                     break;
             }
 
-
-
-
-
-            // Console.WriteLine("Press enter to exit.");
             Console.ReadLine();
         }
 
@@ -47,7 +35,8 @@ namespace MyNamespace
         readonly string lastLocalVersion = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\LastVersia";
         // static string derictory = @$"{homePath}\{DateTime.Now.ToString().Replace(":", ",")}";
         FileSystemWatcher watcher = new FileSystemWatcher(@"C:\Users\MYLOCAL\Desktop\system local version\TextDocument");
-
+        DirectoryInfo di;
+        
         public Watcher()
         {
             LastVersion();
@@ -66,6 +55,7 @@ namespace MyNamespace
             watcher.Filter = "*.txt";
             watcher.IncludeSubdirectories = false;
             watcher.EnableRaisingEvents = true;
+            di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
 
         }
 
@@ -76,6 +66,7 @@ namespace MyNamespace
         {
 
             string derictory;
+            string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
             if (!Directory.Exists(lastLocalVersion))
             {
                 Directory.CreateDirectory(lastLocalVersion);
@@ -89,78 +80,111 @@ namespace MyNamespace
             for (int i = 0; i < fileEntries.Length; i++)
             {
                 derictory = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\{File.GetLastWriteTime(fileEntries[i]).ToString().Replace(":", ",")}";
-                Directory.CreateDirectory(derictory);
+                di = Directory.CreateDirectory(derictory);
                 File.Copy(fileEntries[i], derictory + "\\" + Path.GetFileName(fileEntries[i]), true);
-                using (StreamWriter sw = File.CreateText(derictory + "\\" + File.GetLastWriteTime(fileEntries[i]).ToString().Replace(":", ",") + ".txt"))
+
+                if (!Directory.Exists(version))
                 {
-                    for (int a = 0; a < fileEntries.Length; a++)
+                   di = Directory.CreateDirectory(version);
+                    using (StreamWriter sw = File.CreateText(version + "\\" + DateTime.Now.ToString().Replace(":", ",") + ".txt"))
                     {
-                        if (a != i)
+                        for (int a = 0; a < fileEntries.Length; a++)
                         {
                             sw.WriteLine(File.GetLastWriteTime(fileEntries[a]).ToString().Replace(":", ","));
-                            Console.WriteLine();
                         }
                     }
                 }
+
             }
-
-
 
         }
 
 
+        
+
+
         void OnChanged(object sender, FileSystemEventArgs e)
         {
+            string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
+
+            string time = DateTime.Now.ToString().Replace(":", ",");
+
+            string[] fileEntries = Directory.GetFiles(lastLocalVersion);
+
             SaveData.Save(homePath, lastLocalVersion, e);
+
             File.Copy(homePath + "\\" + Path.GetFileName(e.Name), lastLocalVersion + "\\" + Path.GetFileName(e.Name), true);
+
+
+            using (StreamWriter sw = File.CreateText(version + "\\" + time + ".txt"))
+            {
+                for (int a = 0; a < fileEntries.Length; a++)
+                {
+                    sw.WriteLine(File.GetLastWriteTime(fileEntries[a]).ToString().Replace(":", ","));
+                }
+            }
 
             if (e.ChangeType != WatcherChangeTypes.Changed)
             {
                 return;
             }
 
-            Console.WriteLine($"Время изменения {DateTime.Now}  ");
+            Console.WriteLine($"Время изменения {time}");
             Console.WriteLine($"Изменен файл: {e.FullPath}");
 
         }
 
         private void OnCreated(object sender, FileSystemEventArgs e)
         {
-            //  File.Copy(homePath + "\\" + Path.GetFileName(e.Name), lastLocalVersion + "\\" + Path.GetFileName(e.Name), true);
-            Console.WriteLine($"Время изменения {DateTime.Now}  ");
+            string time = DateTime.Now.ToString().Replace(":", ",");
+
+            string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
+
+
+            Console.WriteLine($"Время изменения {time}  ");
+
             string value = $"Создан файл: {e.FullPath}";
+
             Console.WriteLine(value);
+
             SaveData.Save(homePath, lastLocalVersion, e);
+
             File.Copy(homePath + "\\" + Path.GetFileName(e.Name), lastLocalVersion + "\\" + Path.GetFileName(e.Name), true);
 
+             di = Directory.CreateDirectory(homePath + "\\" + time);
 
+            File.Copy(homePath + "\\" + Path.GetFileName(e.Name), homePath + "\\" + time + "\\" + Path.GetFileName(e.Name), true);
 
-            //string[] fileEntries = Directory.GetFiles(homePath);
-            //for (int i = 0; i < fileEntries.Length; i++)
-            //  {
-            //  string  derictory = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\{File.GetLastWriteTime(fileEntries[i]).ToString().Replace(":", ",")}";
-            //  Directory.CreateDirectory(derictory);
-            //   
-            //   using (StreamWriter sw = File.CreateText(derictory + "\\" + File.GetLastWriteTime(fileEntries[i]).ToString().Replace(":", ",") + ".txt"))
-            //   {
-            //        for (int a = 0; a < fileEntries.Length; a++)
-            //       {
-            //            if (a != i)
-            //           {
-            //               sw.WriteLine(File.GetLastWriteTime(fileEntries[a]).ToString().Replace(":", ","));
-            //              Console.WriteLine();
-            //           }
-            //       }
-            //    }
-            //  }
+            string[] fileEntries = Directory.GetFiles(lastLocalVersion);
+
+            using (StreamWriter sw = File.CreateText(version + "\\" + time + ".txt"))
+            {
+                for (int a = 0; a < fileEntries.Length; a++)
+                {
+                    sw.WriteLine(File.GetLastWriteTime(fileEntries[a]).ToString().Replace(":", ","));
+                }
+            }
 
 
         }
 
         private void OnDeleted(object sender, FileSystemEventArgs e)
         {
-            SaveData.Save(homePath, lastLocalVersion, e);
+            string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
+
+            string time = DateTime.Now.ToString().Replace(":", ",");
+
+            string[] fileEntries = Directory.GetFiles(lastLocalVersion);
+
             File.Delete(lastLocalVersion + "\\" + Path.GetFileName(e.Name));
+
+            using (StreamWriter sw = File.CreateText(version + "\\" + time + ".txt"))
+            {
+                for (int a = 0; a < fileEntries.Length; a++)
+                {
+                    sw.WriteLine(File.GetLastWriteTime(fileEntries[a]).ToString().Replace(":", ","));
+                }
+            }
 
             Console.WriteLine($"Время изменения {DateTime.Now}  ");
             Console.WriteLine($"Удалено: {e.FullPath}");
@@ -169,9 +193,22 @@ namespace MyNamespace
 
         private void OnRenamed(object sender, RenamedEventArgs e)
         {
+            string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
+
+            string time = DateTime.Now.ToString().Replace(":", ",");
+
+            string[] fileEntries = Directory.GetFiles(lastLocalVersion);
+
+            using (StreamWriter sw = File.CreateText(version + "\\" + time + ".txt"))
+            {
+                for (int a = 0; a < fileEntries.Length; a++)
+                {
+                    sw.WriteLine(File.GetLastWriteTime(fileEntries[a]).ToString().Replace(":", ","));
+                }
+            }
+
             SaveData.SaveRenamedFile(homePath, lastLocalVersion, e);
-            // File.Copy(homePath + "\\" + Path.GetFileName(e.Name), lastLocalVersion + "\\" + Path.GetFileName(e.Name), true);
-            Console.WriteLine($"Время изменения {DateTime.Now}  ");
+            Console.WriteLine($"Время изменения {time}  ");
             Console.WriteLine($"Переименовано:");
             Console.WriteLine($"    Старое название: {e.OldFullPath}");
             Console.WriteLine($"    Новое название: {e.FullPath}");
@@ -211,7 +248,7 @@ namespace MyNamespace
                 if (name == searchName)
                 {
                     Directory.CreateDirectory(derictory);
-                    //TODO: запечать пак
+                    
                     File.Move(srcPath, derictory + "\\" + name);
                 }
 
@@ -231,8 +268,8 @@ namespace MyNamespace
 
                 if (name == searchName)
                 {
-                    Directory.CreateDirectory(derictory);
-                    //TODO: запечать пак
+                    DirectoryInfo di = Directory.CreateDirectory(derictory);
+                    di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
                     File.Move(srcPath, derictory + "\\" + name);
                 }
 
