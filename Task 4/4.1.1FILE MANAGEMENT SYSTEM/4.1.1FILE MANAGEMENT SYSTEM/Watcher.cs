@@ -9,7 +9,7 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
         readonly string homePath = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument";
         readonly string lastLocalVersion = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\LastVersia";
         FileSystemWatcher watcher = new(@"C:\Users\MYLOCAL\Desktop\system local version\TextDocument");
-        readonly string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
+        string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
         string time;
         string[] fileEntries;
         DirectoryInfo di;
@@ -34,7 +34,11 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
             watcher.Filter = "*.txt";
             watcher.IncludeSubdirectories = false;
             watcher.EnableRaisingEvents = true;
-            di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
+            if (di != null)
+            {
+                di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
+            }
+
 
         }
 
@@ -43,27 +47,41 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
 
         private void CopyModernVersion()
         {
-            fileEntries = Directory.GetFiles(lastLocalVersion);
+
             string directory;
             time = DateTime.Now.ReplaceСolonTime();
 
-            if (!Directory.Exists(lastLocalVersion)) Directory.CreateDirectory(lastLocalVersion);
+            if (Directory.Exists(lastLocalVersion))
+                Directory.Delete((lastLocalVersion), true);
+
+            Directory.CreateDirectory(lastLocalVersion);
+
+
 
             foreach (var srcPath in Directory.GetFiles(homePath))
             {
                 File.Copy(srcPath, srcPath.Replace(homePath, lastLocalVersion), true);
             }
+            fileEntries = Directory.GetFiles(lastLocalVersion);
 
             for (int i = 0; i < fileEntries.Length; i++)
             {
                 directory = @$"{homePath}\{File.GetLastWriteTime(fileEntries[i]).ToString().Replace(":", ",")}";
-                di = Directory.CreateDirectory(directory);
+                Directory.CreateDirectory(directory);
                 File.Copy(fileEntries[i], directory + "\\" + Path.GetFileName(fileEntries[i]), true);
 
                 if (!Directory.Exists(version))
-                    di = Directory.CreateDirectory(version);
-                WriteLogeToFile.WriteLoge(version, time, fileEntries);
+                {
+                    Directory.CreateDirectory(version);
+                }
+                else
 
+                    WriteLogeToFile.WriteLoge(version, time, fileEntries);
+
+            }
+            if(fileEntries.Length == 0)
+            {
+                WriteLogeToFile.WriteLoge(version, time, fileEntries);
             }
 
         }
