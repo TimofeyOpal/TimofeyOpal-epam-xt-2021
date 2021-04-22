@@ -11,9 +11,8 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
             string derictory = @$"{homePath}\{DateTime.Now.ToString().Replace(":", ",")}";
             string name;
             string searchName;
-            if (e is RenamedEventArgs)
+            if (e is RenamedEventArgs eventRename)
             {
-                var eventRename = e as RenamedEventArgs;
                 name = Path.GetFileName(eventRename.OldFullPath);
             }
             else
