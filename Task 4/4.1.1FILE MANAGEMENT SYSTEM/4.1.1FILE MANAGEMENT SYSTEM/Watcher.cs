@@ -18,10 +18,10 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
 
         public Watcher()
         {
-            if (Directory.Exists(homePath))
+            if (!Directory.Exists(homePath))
             {
                 Directory.CreateDirectory(homePath);
-                Console.WriteLine($"Путь к вашей рабочей дериктории: {}");
+                Console.WriteLine($"Путь к вашей рабочей дериктории: {homePath}");
             }
             watcher = new(@"C:\Users\MYLOCAL\Desktop\system local version\TextDocument");
             CopyModernVersion();
