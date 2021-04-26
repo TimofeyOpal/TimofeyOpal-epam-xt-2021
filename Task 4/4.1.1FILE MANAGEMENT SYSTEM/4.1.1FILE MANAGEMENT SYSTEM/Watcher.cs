@@ -6,9 +6,9 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
 {
     public class Watcher
     {
-        readonly string homePath = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument";
-        readonly string lastLocalVersion = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\LastVersia";
-        FileSystemWatcher watcher = new(@"C:\Users\MYLOCAL\Desktop\system local version\TextDocument");
+        readonly static string homePath = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument";
+        readonly static string lastLocalVersion = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\LastVersia";
+        FileSystemWatcher watcher  = new(@"C:\Users\MYLOCAL\Desktop\system local version\TextDocument");
         string version = @$"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
         string time;
         string[] fileEntries;
@@ -18,6 +18,12 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
 
         public Watcher()
         {
+            if (Directory.Exists(homePath))
+            {
+                Directory.CreateDirectory(homePath);
+                Console.WriteLine($"Путь к вашей рабочей дериктории: {}");
+            }
+            watcher = new(@"C:\Users\MYLOCAL\Desktop\system local version\TextDocument");
             CopyModernVersion();
             watcher.NotifyFilter = NotifyFilters.Attributes
                                  | NotifyFilters.CreationTime

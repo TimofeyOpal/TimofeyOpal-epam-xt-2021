@@ -9,6 +9,8 @@ namespace MyNamespace
     {
         static void Main()
         {
+            DirectoryInfo di = Directory.CreateDirectory(@"C:\Ushgjhfjhgers\MYLOCghjgjhgjhAL\Desktghjhjghgjop\shjghjjhgstem local veghjgjhhgjrsion\TexjhgjhgjhtDocument");
+
             Console.WriteLine("Выберете режим");
             Console.WriteLine("1 = наблюдения 2 = отката изменений назад");
 
