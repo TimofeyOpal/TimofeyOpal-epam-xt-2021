@@ -9,9 +9,9 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
 {
     class Rollback
     {
-        string version = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
-        string home = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument";
-        private List<string> listVersion = new List<string>();
+        readonly string version = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument\version";
+        readonly string home = @"C:\Users\MYLOCAL\Desktop\system local version\TextDocument";
+        private List<string> listVersion = new();
         string name;
         public Rollback()
         {
@@ -70,7 +70,7 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
             {
                 foreach (var item in arrPath)
                 {
-                    DirectoryInfo info = new DirectoryInfo(item);
+                    DirectoryInfo info = new(item);
                     if (readText[i] == info.Name)
                     {
                         string[] filе = Directory.GetFiles(item);
@@ -83,12 +83,5 @@ namespace _4._1._1FILE_MANAGEMENT_SYSTEM
                 Console.WriteLine("Все успешно!");
             }
         }
-
-
-
-
-
-
-
     }
 }

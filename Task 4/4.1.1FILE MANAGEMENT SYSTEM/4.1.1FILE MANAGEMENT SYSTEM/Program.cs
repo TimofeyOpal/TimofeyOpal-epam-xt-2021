@@ -1,7 +1,6 @@
 ﻿using _4._1._1FILE_MANAGEMENT_SYSTEM;
 using System;
-using System.Collections.Generic;
-using System.IO;
+
 
 namespace MyNamespace
 {
@@ -9,7 +8,7 @@ namespace MyNamespace
     {
         static void Main()
         {
-            DirectoryInfo di = Directory.CreateDirectory(@"C:\Ushgjhfjhgers\MYLOCghjgjhgjhAL\Desktghjhjghgjop\shjghjjhgstem local veghjgjhhgjrsion\TexjhgjhgjhtDocument");
+          //  DirectoryInfo di = Directory.CreateDirectory(@"C:\Ushgjhfjhgers\MYLOCghjgjhgjhAL\Desktghjhjghgjop\shjghjjhgstem local veghjgjhhgjrsion\TexjhgjhgjhtDocument");
 
             Console.WriteLine("Выберете режим");
             Console.WriteLine("1 = наблюдения 2 = отката изменений назад");
